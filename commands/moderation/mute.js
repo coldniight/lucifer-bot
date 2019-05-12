@@ -10,23 +10,23 @@ module.exports = {
     },
     run: async (bot, message, args) => {
         let perembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You do not have access to \`mute\`, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let memembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`Please provide a valid user to mute, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let timeembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`Please provide a time to mute the user, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
   
@@ -37,9 +37,9 @@ module.exports = {
         if(!mutee) return message.channel.send(memembed)
 
         let adminembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You are not allowed to perform \`mute\` on user ${mutee}, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
@@ -84,30 +84,30 @@ module.exports = {
         }
 
         let mutememembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You have been muted on the Lucifer Discord by ${message.author} for \`${time}\` ` + minutes + ` with reason \`${reason}\`.\n\n**Attempting to bypass a mute will get you muted for a longer time if you do so.**`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let unmuteembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You have been unmuted on the Lucifer Discord automatically by the bot.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let muteembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`Successfully muted user ${mutee}, for \`${time}\` ` + minutes + ` with reason \`${reason}\`, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let alrembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`The user ${mutee} is already muted, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
