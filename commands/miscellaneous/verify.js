@@ -12,16 +12,16 @@ module.exports = {
         let unverified = bot.guilds.get("574756014163886111").roles.find("name", "Unverified")
         let verified = bot.guilds.get("574756014163886111").roles.find("name", "Verified")
         let embed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You are already verified, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let vembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`Verified user **${message.author}** with ID **${message.author.id}**.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
