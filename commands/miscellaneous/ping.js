@@ -10,8 +10,8 @@ module.exports = {
     },
     run: async (bot, message, args) => {
         let embed = new RichEmbed()
-        .setColor(0xe20000)
-        .setTitle("Lucifer Bot")
+        .setColor(0x3c368f)
+        .setTitle("Astronaut Bot")
         .setDescription(`Pong! \`${Math.round(bot.ping)}\` ms.`)
         .setFooter(message.id)
         .setTimestamp()
