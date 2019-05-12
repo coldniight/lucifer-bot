@@ -9,8 +9,8 @@ module.exports = {
         aliases: []
     },
     run: async (bot, message, args) => {
-        let unverified = bot.guilds.get("574756014163886111").roles.find("name", "Unverified")
-        let verified = bot.guilds.get("574756014163886111").roles.find("name", "Verified")
+        let unverified = bot.guilds.get("577220184692097034").roles.find("name", "Unverified")
+        let verified = bot.guilds.get("577220184692097034").roles.find("name", "Verified")
         let embed = new RichEmbed()
         .setTitle("Astronaut Bot")
         .setDescription(`You are already verified, ${message.author}.`)
@@ -28,7 +28,7 @@ module.exports = {
         if(!message.member.roles.has(unverified.id)) return message.author.send(embed).then(message.delete());
         await(message.member.addRole(verified));
         await(message.member.removeRole(unverified));
-        await bot.guilds.get("574756014163886111").channels.get("574962903396909056").send(vembed);
+        await bot.guilds.get("577220184692097034").channels.get("577252879971385379").send(vembed);
         await message.delete();
     }
 }
