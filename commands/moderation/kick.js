@@ -10,16 +10,16 @@ module.exports = {
     },
     run: async (bot, message, args) => {
         let perembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You do not have access to \`kick\`, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let memembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`Please provide a valid user to kick, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
@@ -34,23 +34,23 @@ module.exports = {
         if(!message.guild.me.hasPermissions(["KICK_MEMBERS"])) return console.log("I don't have enough permissions to run some commands!")
 
         let kickmemembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`You have been kicked from the Lucifer Discord by ${message.author} for reason \'${reason}\'.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let kickembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`User ${kickMember} has been successfully kicked, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let logembed = new RichEmbed()
-        .setTitle("Lucifer Bot")
+        .setTitle("Astronaut Bot")
         .setDescription(`User **${kickMember}** with ID **${kickMember.id}** has been banned by ${message.author} for reason '${reason}'.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
@@ -58,7 +58,7 @@ module.exports = {
         kickMember.kick()).catch(err => console.log(err))
 
         message.channel.send(kickembed)
-        message.guild.channels.find("574983707237285899").send(logembed)
+        message.guild.channels.find("577220184692097034").send(logembed)
         
     }
 }
