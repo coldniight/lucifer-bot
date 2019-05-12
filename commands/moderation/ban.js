@@ -12,14 +12,14 @@ module.exports = {
         let perembed = new RichEmbed()
         .setTitle("Lucifer Bot")
         .setDescription(`You do not have access to \`ban\`, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let memembed = new RichEmbed()
         .setTitle("Lucifer Bot")
         .setDescription(`Please provide a valid user to ban, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
@@ -35,22 +35,22 @@ module.exports = {
 
         let banmemembed = new RichEmbed()
         .setTitle("Lucifer Bot")
-        .setDescription(`You have been banned from the Lucifer Discord by ${message.author} for reason \'${reason}\'.\n\n**Do not attempt to bypass bans, you will just be banned again.**`)
-        .setColor(0xe20000)
+        .setDescription(`You have been banned from the Lunar Discord by ${message.author} for reason \'${reason}\'.\n\n**Do not attempt to bypass bans, you will just be banned again.**`)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let banembed = new RichEmbed()
         .setTitle("Lucifer Bot")
         .setDescription(`User ${banMember} has been successfully banned, ${message.author}.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
         let logembed = new RichEmbed()
         .setTitle("Lucifer Bot")
         .setDescription(`User **${banMember}** with ID **${banMember.id}** has been banned by ${message.author} for reason '${reason}'.`)
-        .setColor(0xe20000)
+        .setColor(0x3c368f)
         .setFooter(message.id)
         .setTimestamp();
 
@@ -58,7 +58,7 @@ module.exports = {
         message.guild.ban(banMember, { days: 1, reason: reason})).catch(err => console.log(err))
 
         message.channel.send(banembed)
-        message.guild.channels.get("574983707237285899").send(logembed)
+        message.guild.channels.get("577253140601241600").send(logembed)
         
     }
 }
