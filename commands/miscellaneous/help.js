@@ -10,30 +10,30 @@ module.exports = {
     },
     run: async (bot, message, args) => {
         let adminembed = new RichEmbed()
-        .setColor(0xe20000)
-        .setTitle("Lucifer Bot")
-        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **botnotifications**, **mute**, **unmute**, **kick**, **ban**, **unban**`)
+        .setColor(0x3c368f)
+        .setTitle("Astronaut Bot")
+        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **mute**, **unmute**, **kick**, **ban**, **unban**`)
         .setFooter(message.id)
         .setTimestamp()
 
         let modembed = new RichEmbed()
-        .setColor(0xe20000)
-        .setTitle("Lucifer Bot")
-        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **botnotifications**, **mute**, **unmute**, **kick**`)
+        .setColor(0x3c368f)
+        .setTitle("Astronaut Bot")
+        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **mute**, **unmute**, **kick**`)
         .setFooter(message.id)
         .setTimestamp()
 
         let helpembed = new RichEmbed()
-        .setColor(0xe20000)
-        .setTitle("Lucifer Bot")
-        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **botnotifications**, **mute**, **unmute**`)
+        .setColor(0x3c368f)
+        .setTitle("Astronaut Bot")
+        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **mute**, **unmute**`)
         .setFooter(message.id)
         .setTimestamp()
 
         let userembed = new RichEmbed()
-        .setColor(0xe20000)
-        .setTitle("Lucifer Bot")
-        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **botnotifications**`)
+        .setColor(0x3c368f)
+        .setTitle("Astronaut Bot")
+        .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**`)
         .setFooter(message.id)
         .setTimestamp()
 
@@ -43,8 +43,8 @@ module.exports = {
             if(bot.commands.has(command)) {
                 command = bot.commands.get(command);
                 let hembed = new RichEmbed()
-                .setColor(0xe20000)
-                .setTitle("Lucifer Bot")
+                .setColor(0x3c368f)
+                .setTitle("Astronaut Bot")
                 .setDescription(`Command **${command.config.name}**:\n\n**Description**: ${command.config.description || "No description"}\n**Usage**: ${command.config.usage}\n**Accessablebly**: ${command.config.accessableby}\n**Aliases**: ${command.config.aliases}`)
                 .setFooter(message.id)
                 .setTimestamp()
